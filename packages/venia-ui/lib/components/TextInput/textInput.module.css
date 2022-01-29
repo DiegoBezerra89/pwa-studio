@@ -1,11 +1,13 @@
 .input {
     composes: input from '../Field/field.module.css';
+
+    composes: disabled_text-subtle from global;
 }
 
 .input_error {
     composes: input from '../Field/field.module.css';
 
-    border-color: rgb(var(--venia-global-color-red-400));
+    composes: border-error from global;
 }
 
 .input_shimmer {
