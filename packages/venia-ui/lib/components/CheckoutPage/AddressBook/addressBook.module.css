@@ -6,8 +6,8 @@
     composes: root;
 
     grid-template-areas:
-    'header buttons'
-    'content content';
+        'header buttons'
+        'content content';
     grid-template-columns: auto auto;
     composes: gap-y-xs from global;
     composes: grid from global;
@@ -15,7 +15,7 @@
     composes: items-center from global;
     composes: justify-between from global;
 
-    composes: lg_grid-cols-[60px,1fr] from global;
+    composes: lg_grid-cols-[60px, 1fr] from global;
 }
 
 @media (max-width: 959px) {

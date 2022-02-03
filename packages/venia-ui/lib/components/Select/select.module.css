@@ -15,7 +15,6 @@
     composes: disabled_text-subtle from global;
 }
 
-
 .input {
     composes: disabled_pointer-events-none from global;
 }

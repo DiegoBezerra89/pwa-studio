@@ -35,12 +35,10 @@
 }
 
 @media (min-width: 960px) {
-
     /* TODO @TW: review */
     .root {
         left: calc(50% - 370px);
     }
-
 }
 
 .root_open {

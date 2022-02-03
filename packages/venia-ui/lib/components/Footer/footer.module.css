@@ -34,7 +34,10 @@
     composes: py-0 from global;
     grid-area: links;
     grid-auto-columns: 18rem;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* TODO @TW: review */
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(12rem, 1fr)
+    ); /* TODO @TW: review */
 
     composes: md_gap-x-md from global;
     composes: md_gap-y-md from global;

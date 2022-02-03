@@ -5,7 +5,9 @@
     composes: top-lg from global;
     composes: w-full from global;
     grid-template-rows: min-content 1fr;
-    height: calc(100% - var(--legacy-minicart-header-height)); /* TODO @TW: review */
+    height: calc(
+        100% - var(--legacy-minicart-header-height)
+    ); /* TODO @TW: review */
 }
 
 .focusItem {

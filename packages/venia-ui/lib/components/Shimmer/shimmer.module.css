@@ -12,15 +12,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: var(--venia-global-maxWidth); /* TODO @TW: review. this should use TW theme value "maxWidth.site" */
+    width: var(
+        --venia-global-maxWidth
+    ); /* TODO @TW: review. this should use TW theme value "maxWidth.site" */
     height: 100%;
     background-image: linear-gradient(
-            to right,
-            rgb(var(--venia-global-color-gray-50) / 0%) 0%,
-            rgb(var(--venia-global-color-gray-50)) 40%,
-            rgb(var(--venia-global-color-gray-50) / 0%) 80%,
-            rgb(var(--venia-global-color-gray-50) / 0%) 100%
-        );
+        to right,
+        rgb(var(--venia-global-color-gray-50) / 0%) 0%,
+        rgb(var(--venia-global-color-gray-50)) 40%,
+        rgb(var(--venia-global-color-gray-50) / 0%) 80%,
+        rgb(var(--venia-global-color-gray-50) / 0%) 100%
+    );
     /* composes: bg-no-repeat from global; */
     background-repeat: none;
     background-size: var(--venia-global-maxWidth) 100%;

@@ -65,7 +65,6 @@
  */
 
 @media (max-width: 959px) {
-
     .shippingInformationContainer {
         grid-row: 1 / span 1;
         grid-column: 1 / span 1;

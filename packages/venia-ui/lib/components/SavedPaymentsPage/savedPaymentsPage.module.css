@@ -30,7 +30,7 @@
     composes: grid-cols-1 from global;
     grid-auto-rows: minmax(6rem, max-content);
 
-    composes: lg_grid-cols-[1fr,1fr,1fr] from global;
+    composes: lg_grid-cols-[1fr, 1fr, 1fr] from global;
 }
 
 .noPayments {

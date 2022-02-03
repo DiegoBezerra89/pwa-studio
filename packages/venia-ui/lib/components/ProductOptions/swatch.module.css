@@ -8,7 +8,6 @@
     composes: text-white from global;
     composes: w-[3rem] from global;
     background: var(--venia-swatch-bg);
-
 }
 
 /* TODO @TW: review. This relies on custom prop to set color from JSX "style" prop. */

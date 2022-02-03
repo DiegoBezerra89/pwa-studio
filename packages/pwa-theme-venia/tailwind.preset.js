@@ -14,13 +14,16 @@ const colors = {
         // 500: '51 109 255',
         600: '41 84 255',
         700: '31 57 255',
-        800: '23 43 196',
-    },
+        800: '23 43 196'
+    }
 };
 
 const extend = {
     alignContent: {
         stretch: 'stretch'
+    },
+    animation: {
+        spin: 'spin 1920ms linear infinite'
     },
     backgroundColor: theme => ({
         body: '#FFF',
@@ -28,9 +31,13 @@ const extend = {
         subtle: theme('colors.gray.100')
     }),
     backgroundImage: theme => ({
-        'gradient-radial': `radial-gradient(circle, ${theme('colors.gray.100')}, white)`,
-        'swatch': theme('colors.gray.100'),
-        'swatch-selected': `linear-gradient(-45deg, rgba(0, 0, 0, 0.2), transparent), ${theme('colors.gray.100')}`,
+        'gradient-radial': `radial-gradient(circle, ${theme(
+            'colors.gray.100'
+        )}, white)`,
+        swatch: theme('colors.gray.100'),
+        'swatch-selected': `linear-gradient(-45deg, rgba(0, 0, 0, 0.2), transparent), ${theme(
+            'colors.gray.100'
+        )}`
     }),
     borderColor: theme => ({
         button: theme('colors.gray.600'),
@@ -41,38 +48,38 @@ const extend = {
         shaded: {
             10: 'rgba(0, 0, 0, 0.1)',
             15: 'rgba(0, 0, 0, 0.15)',
-            20: 'rgba(0, 0, 0, 0.2)',
+            20: 'rgba(0, 0, 0, 0.2)'
         },
         strong: theme('colors.gray.800'),
         subtle: theme('colors.gray.300'),
         success: theme('colors.emerald.600'),
-        warning: theme('colors.amber.500'),
+        warning: theme('colors.amber.500')
     }),
-    borderRadius: theme => ({
+    borderRadius: {
         // Primitive
         radius1: '4px',
         radius2: '8px',
-        radius3: '100%',
+        radius3: '100%'
 
         // Generic
         // TODO @TW: review. This causes error.
         // radiusBox: theme('borderRadius.radius2'),
         // radiusButton: theme('borderRadius.radius1'),
         // radiusInput: theme('borderRadius.radius1'),
-    }),
+    },
     borderWidth: {
         DEFAULT: '1px'
     },
     boxShadow: theme => ({
-        'buttonFocus': `-6px 6px ${theme('colors.brand.700')} / 0.3`,
-        'dialog': `1px 1px 5px ${theme('colors.gray.600')}`,
-        'headerTrigger': `0 4px ${theme('colors.brand.600')}`,
-        'inputFocus': `-6px 6px ${theme('colors.brand.100')}`,
-        'menu': '0 1px 3px rgba(0, 0, 0, 0.2)',
-        'modal': `1px 0 ${theme('colors.borderColor.subtle')}`,
-        'radioActive': `-3px 3px ${theme('colors.brand.100')}`,
-        'radioFocus': `-3px 3px ${theme('colors.brand.100')}`,
-        'thin': `0 1px ${theme('colors.gray.300')}`,
+        buttonFocus: `-6px 6px ${theme('colors.brand.700')} / 0.3`,
+        dialog: `1px 1px 5px ${theme('colors.gray.600')}`,
+        headerTrigger: `0 4px ${theme('colors.brand.600')}`,
+        inputFocus: `-6px 6px ${theme('colors.brand.100')}`,
+        menu: '0 1px 3px rgba(0, 0, 0, 0.2)',
+        modal: `1px 0 ${theme('colors.borderColor.subtle')}`,
+        radioActive: `-3px 3px ${theme('colors.brand.100')}`,
+        radioFocus: `-3px 3px ${theme('colors.brand.100')}`,
+        thin: `0 1px ${theme('colors.gray.300')}`
     }),
     colors: getColors(colors),
     flex: {
@@ -80,20 +87,20 @@ const extend = {
     },
     fontFamily: {
         sans: ['Muli', 'sans-serif'],
-        serif: ['Source Serif Pro', 'serif'],
+        serif: ['Source Serif Pro', 'serif']
     },
     fontSize: {
         '2xs': '0.6875rem', // 11px
-        'xs': '0.75rem',    // 12px
-        'sm': '0.875rem',   // 14px
-        'base': '1rem',     // 16px
-        'lg': '1.25rem',    // 18px
-        'xl': '1.5rem',     // 24px
-        '2xl': '2.125rem',  // 34px
-        '3xl': '3rem',      // 48px
-        '4xl': '3.75rem',   // 60px
-        '5xl': '6rem',      // 96px
-        'inherit': 'inherit',
+        xs: '0.75rem', // 12px
+        sm: '0.875rem', // 14px
+        base: '1rem', // 16px
+        lg: '1.25rem', // 18px
+        xl: '1.5rem', // 24px
+        '2xl': '2.125rem', // 34px
+        '3xl': '3rem', // 48px
+        '4xl': '3.75rem', // 60px
+        '5xl': '6rem', // 96px
+        inherit: 'inherit'
     },
     fontWeight: {
         DEFAULT: '300'
@@ -107,7 +114,7 @@ const extend = {
         autoFirst: 'auto 1fr',
         autoLast: '1fr auto',
         carouselThumbnailList: 'repeat(auto-fit, 1rem)',
-        radioGroupRoot: 'repeat(auto-fit, minmax(125px, 1fr))',
+        radioGroupRoot: 'repeat(auto-fit, minmax(125px, 1fr))'
     },
     gridTemplateRows: {
         auto: 'auto',
@@ -143,27 +150,27 @@ const extend = {
         disabled: 50,
         mask: {
             dark: 90,
-            light: 50,
+            light: 50
         }
     },
     order: {
-        'unset': 'unset'
+        unset: 'unset'
     },
     spacing: {
         '2xs': '0.5rem',
-        'xs': '1rem',
-        'sm': '1.5rem',
-        'md': '2rem',
-        'lg': '3rem',
+        xs: '1rem',
+        sm: '1.5rem',
+        md: '2rem',
+        lg: '3rem',
         DEFAULT: '1.5rem',
-        'filterSidebarWidth': '325px',
-        'full': '100%',
+        filterSidebarWidth: '325px',
+        full: '100%'
     },
     textColor: theme => ({
         colorDefault: theme('colors.gray.900'), // TODO @TW naming collision: TW puts "fontSize" + "color" under "text-" prefix
         error: theme('colors.red.700'),
         subtle: theme('colors.gray.600'),
-        DEFAULT: theme('colors.gray.900'),
+        DEFAULT: theme('colors.gray.900')
     }),
     width: {
         fit: 'fit-content'
@@ -180,7 +187,7 @@ const extend = {
         mask: '60',
         menu: '70',
         dialog: '80',
-        toast: '90',
+        toast: '90'
     }
 };
 
@@ -189,28 +196,28 @@ const theme = {
     extend,
     // Override Tailwind defaults and preset config.
     screens: {
-        'xs': '480px',
-        'sm': '640px',
-        'md': '800px',
-        'lg': '960px',
-        'xl': '1120px',
+        xs: '480px',
+        sm: '640px',
+        md: '800px',
+        lg: '960px',
+        xl: '1120px',
         '2xl': '1280px',
         '3xl': '1440px',
         '4xl': '1600px',
-        'max': '1920px'
+        max: '1920px'
     },
     transitionDuration: {
-        'xs': '64ms',
-        'sm': '128ms',
-        'md': '192ms',
-        'lg': '256ms',
-        'xl': '320ms',
+        xs: '64ms',
+        sm: '128ms',
+        md: '192ms',
+        lg: '256ms',
+        xl: '320ms',
         '2xl': '384ms',
         '3xl': '448ms',
         '4xl': '512ms',
-        'DEFAULT': '384ms',
-        'enter': '224ms',
-        'exit': '192ms'
+        DEFAULT: '384ms',
+        enter: '224ms',
+        exit: '192ms'
     },
     venia: theme => ({
         plugins: {
@@ -240,7 +247,7 @@ const config = {
             fontWeight: ['first'],
             outline: ['active', 'focus'],
             pointerEvents: ['disabled'],
-            textColor: ['disabled', 'first'],
+            textColor: ['disabled', 'first']
         }
     }
 };
